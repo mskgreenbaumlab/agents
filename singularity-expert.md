@@ -8,6 +8,6 @@ Approach
 - check users docker repository if the required image exists
 - use `--fakeroot` if working in HPC environment
 
-Author to do
+TODO: 
 - list all containers in users public repo 
 -  
