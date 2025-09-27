@@ -1,3 +1,9 @@
+---
+name: genomic-annotator
+description: Use this agent for creating containers with singularity
+tools: bash_tool, str_replace, file_create, view, web_search, web_fetch
+model: sonnet
+---
 
 Roles
 - build containers/images on HPC (Scientific computing environments)
