@@ -1,10 +1,4 @@
 # Collection of sub-agents that can be deployed for scientific computing
----
-
-
----
-
-
 
 ###  software Engineering
 - docker-expert.md
@@ -27,4 +21,4 @@
 - presentation-expert.md
 
 ### Research Planning
-
+- new-research-planner.md
