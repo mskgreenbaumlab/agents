@@ -1,0 +1,56 @@
+---
+name: databases_config.yaml
+author: Samuel Ahuno
+last_modified: 09-28-2025
+description: list of frequently accessed databases for fast look up.
+---
+
+#iris:
+reference_genomes:
+        local:
+            mm10:
+                    fasta: /data1/greenbab/database/mm10/mm10.fa
+                    gtf: /data1/greenbab/database/mm10/annotations/gencode.vM36.annotation.gtf.gz
+                    sizes: /data1/greenbab/database/mm10/mm10.sorted.standard.chrom.sizes
+                    CpGIslands: /data1/greenbab/database/mm10/mm10_CpGIslands.bed
+                    repMaskerBed: /data1/greenbab/database/RepeatMaskerDB/repeatmasker_dot_org/mm10/rmsk405_20140131/rm_mm10_rm_sorted.bed
+                    repMaskerOut: /data1/greenbab/database/RepeatMaskerDB/repeatmasker_dot_org/mm10/rmsk405_20140131/mm10.fa.out.gz
+                    repMaskerAlign: /data1/greenbab/database/RepeatMaskerDB/repeatmasker_dot_org/mm10/rmsk405_20140131/mm10.fa.align.gz
+            mm39:
+                    fasta: /data1/greenbab/database/mm39/mm39.fa
+                    #gtf: 
+                    sizes: /data1/greenbab/database/mm39/mm39.sorted.standard.chrom.sizes
+                    CpGIslands: /data1/greenbab/database/CpGIslands/mm39/mm39_CpG_Islands_UCSC.bed
+            hg38:
+                    fasta: /data1/greenbab/database/hg38/v0/Homo_sapiens_assembly38.fasta
+                    gtf: /data1/greenbab/database/gencode_annotations/hg38/gencode.v47.annotation.gtf.gz
+                    sizes: /data1/greenbab/database/sizes.Homo_sapiens_assembly38
+                    CpGIslands: /data1/greenbab/database/CpGIslands/hg38/hg38_CpGIslands.bed
+            t2t_CHM13v2_plusY:
+                    fasta: /data1/greenbab/database/T2T_CHM13v2_plusY/chm13v2.0.fa
+                    gtf: /data1/greenbab/database/T2T_CHM13v2_plusY/chm13v2.0_RefSeq_Liftoff_v5.2.sorted.gtf
+                    sizes: /data1/greenbab/database/T2T_CHM13v2_plusY/chm13v2.0.chrom.sizes
+                    CpGIslands: /data1/greenbab/database/CpGIslands/t2t/chm13v2.0_CGI.bed
+                    tandem_rep: #/data1/greenbab/database/TandemRepeats/t2t/chm13v2.0_TandemRepeats.bed
+            GRCh37:
+                    fasta: /data1/greenbab/database/human_GRCh37/GRCh37-lite.fa
+                    gtf: /data1/greenbab/database/gencode_annotations/gencode.v19.annotation.noChr.gtf
+                    sizes: /data1/greenbab/database/human_GRCh37/GRCh37_lite.genome.sizes
+                    CpGIslands: /data1/greenbab/database/human_GRCh37/cpgIslands_hg19.sorted.nochrNames.bed6
+                    tandem_rep: /data1/greenbab/database/human_GRCh37/human_hs37d5.trf.bed
+                    repeats: /data1/greenbab/database/human_GRCh37/repeats.regions
+                    gaps: /data1/greenbab/database/human_GRCh37/hg19_gap_nochr.txt
+        remote:
+            mm10:
+                    fasta: s3://ngi-igenomes/igenomes/Mus_musculus/UCSC/mm10/Sequence/WholeGenomeFasta/genome.fa
+                    gtf: s3://ngi-igenomes/igenomes/Mus_musculus/UCSC/mm10/Annotation/Genes/genes.gtf
+                    chromosomes: s3://ngi-igenomes/igenomes/Mus_musculus/UCSC/mm10/Sequence/Chromosomes/
+            mm39:
+                    fasta: s3://ngi-igenomes/igenomes/Mus_musculus/NCBI/GRCm39/Sequence/WholeGenomeFasta/genome.fa
+                    gtf: s3://ngi-igenomes/igenomes/Mus_musculus/NCBI/GRCm39/Annotation/Genes/genes.gtf
+            hg38:
+                    fasta: s3://ngi-igenomes/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa
+                    gtf: s3://ngi-igenomes/igenomes/Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.gtf
+            GRCh37:
+                    fasta: s3://ngi-igenomes/igenomes/Homo_sapiens/Ensembl/GRCh37/Sequence/WholeGenomeFasta/genome.fa
+                    gtf: s3://ngi-igenomes/igenomes/Homo_sapiens/Ensembl/GRCh37/Annotation/Genes/genes.gtf

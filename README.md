@@ -1,11 +1,15 @@
 # Collection of sub-agents that can be deployed for scientific computing
 
+# configuration files accompanying sub-agents
+- databases_config.yaml
+
 ###  software Engineering
 - docker-expert.md
 
 ### Workflows
 - snakemake-expert.md
-- nextflow-expert.md 
+- nextflow-expert.md
+- singularity-apptainer-expert.md
 
 ### Bioinformatics/Computational biology
 - igv-expert.md
